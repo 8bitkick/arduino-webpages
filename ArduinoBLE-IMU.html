@@ -7,7 +7,7 @@
   <script src="3d-model/GLTFLoader.js"></script>
   <style>
   body,h1,p {margin: 16;background: #ffffff;color: black;font-family: 'Comfortaa', cursive;}
-h1 {font-size: 20px;}
+  h1 {font-size: 20px;}
   #bigButton {
     background-color: green; border: none; color: black; padding: 1px; text-align: center;
     text-decoration: none; font-size: 8px; margin: 4px 10px; height: 16px; width: 16px;
@@ -17,7 +17,8 @@ h1 {font-size: 20px;}
 </head>
 <body>
   <h1>Arduino MKR 1010 and IMU shield</h1>
-  
+  <p>First upload sketch to board with <a href="https://create.arduino.cc/editor/dpajak/e7af8e95-0aff-4ce1-b2f7-4e7b446c2577/preview">Arduino Create</a></p>
+
   <div style="width:95%;height:100%;border-color: white;border-style: solid;border-width: 1;">
     <div style="width:100%;height:30px;border-color: white;border-style: solid;border-width: 1;border-left:none;border-top:none;margin-top:5px;" id="status">
       <button id="bigButton" ></button><div style="display: inline-block;margin-left: 10px" id="infoBar">Click to connect via Bluetooth LE</div>
@@ -34,8 +35,8 @@ h1 {font-size: 20px;}
 A Web Bluetooth connection example
 gathering three characteristics from a 3-axis accelerometer
 created 6 Aug 2018
-modified 14 Nov 2018
 by Tom Igoe
+
 */
 
 // BLE device
@@ -188,7 +189,7 @@ function init3D(){
     directionalLight.position.set(10,0,0);
     scene.add( directionalLight );
     var light = new THREE.AmbientLight( 0x111111 );
-scene.add( light );
+    scene.add( light );
 
 
 
